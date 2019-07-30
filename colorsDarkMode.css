@@ -1,0 +1,44 @@
+*{
+    background-color:#222222;
+}
+.menu{
+    background-color:#141414;
+}
+.menu a{
+    background-color: #141414;
+    color: #2abb51;
+}
+.menu a:hover{
+    background-color: #2abb51;
+    color: #222222;
+}
+.menu ul ul li{
+    border-color: #2abb51;
+}
+.menu ul ul li a{
+    background-color: #222222;
+}
+.menu ul li p{
+    background-color: #141414;
+}
+label[for="bt_menu"]{
+    background-color: #2abb51;
+    color: #141414;
+}
+/* label[for="bt_darkMode"]{
+    background-color: #141414;
+    color: #2abb51;
+}
+label[for="bt_darkMode"]:hover{
+    background-color: #2abb51;
+    color: #141414;
+} */
+#nomezao{
+    color: #ffffff;
+}
+#titulo1{
+    color: #2abb51;
+}
+#descriçao{
+    color: #bbbbbb;
+}
