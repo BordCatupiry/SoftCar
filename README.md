@@ -1,5 +1,4 @@
 # SoftCar
-Web
 
 Ouviram do Ipiranga as margens plácidas
 De um povo heroico o brado retumbante

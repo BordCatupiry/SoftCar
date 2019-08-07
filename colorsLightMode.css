@@ -18,11 +18,8 @@ label[for="bt_menu"]{
     background-color: #145899;
     color: #ffffff;
 }
-/* label[for="bt_darkMode"]{
-    background-color: #ffffff;
-    color: #2abb51;
+#titulo1{
+    color: #145899;
 }
-label[for="bt_darkMode"]:hover{
-    background-color: #1a29af;
-    color: #ffffff;
-} */
+
+
