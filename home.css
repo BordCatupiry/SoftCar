@@ -55,7 +55,6 @@
 
     .menu ul li:hover ul{
         visibility: visible;
-        transition: .4s;
     
     }
     .menu a:hover{
