@@ -35,16 +35,16 @@
         visibility: hidden;
         font-family:'Roboto',sans-serif;
     }
-    .menu #logo{
-        height: 25px;
-
+    .logo{
+        position: flex;
+        height: 33px;
     }
-    .espaçoLogo{
-        padding-top: 15px;
-        padding-bottom: 15px;
+    #logoImg{
+        padding-top: 7px;
+        padding-left: 50px;
+        height: 33px;
         text-align: center;
-        width: 100%;
-    } 
+    }
 
     #descriçao{
         font-family: 'Open Sans',sans-serif;
@@ -55,8 +55,9 @@
 
     .menu ul li:hover ul{
         visibility: visible;
+        transition: .4s;
+    
     }
-
     .menu a:hover{
         font-weight: bold;
         cursor: pointer;
