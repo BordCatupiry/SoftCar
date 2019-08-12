@@ -28,11 +28,11 @@
     }
     .itens-menu a{
         text-decoration: none;
-        padding: 15px;
+        padding: 25px;
         display: block;
         font-family: 'Roboto', sans-serif;
         text-align: center;
-        width: 100%;
+        width: 130px;
     }
 
     #descriçao{
@@ -41,10 +41,6 @@
         padding-top: 25px;
     }
 
-
-    label[for="bt_menu"]{
-        display: none;
-    }
     .banner img{
         width: 100%;
     }
