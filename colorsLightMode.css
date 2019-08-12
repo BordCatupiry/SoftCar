@@ -1,22 +1,18 @@
 *{
     background-color:#ffffff;
 }
-.menu a{
+.itens-menu a{
     background-color: #ffffff;
     color: #145899;
 }
-.menu ul ul li{
+.itens-menu ul ul li{
     border-color: #145899;
 }
-.menu ul ul li a{
+.itens-menu ul ul li a{
     background-color: #eeeeee;
 }
-.menu ul li p{
+.itens-menu ul li p{
     background-color: #ffffff;
-}
-label[for="bt_menu"]{
-    background-color: #145899;
-    color: #ffffff;
 }
 #titulo1{
     color: #145899;

@@ -14,17 +14,23 @@
         height: 100%;
         display: block;
     }
+
+
+
     .itens-menu ul{
         list-style: none;
         display: flex;
     }
     .itens-menu ul li{
         float: left;
-        width: 100%;
     }
     .itens-menu ul ul{
         position: absolute;
         visibility: hidden;
+    }
+
+    .itens-menu ul li:hover ul{
+        visibility: visible;
     }
     .itens-menu a{
         text-decoration: none;
@@ -34,7 +40,14 @@
         text-align: center;
         width: 130px;
     }
+    .itens-menu a:hover {
+        font-weight: bold;
+    }
+    .itens-menu ul ul li{
+        float: none;
+    }
 
+    
     #descriçao{
         font-family: 'Open Sans',sans-serif;
         font-size: 18pt;
