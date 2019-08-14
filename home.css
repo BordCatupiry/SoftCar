@@ -46,7 +46,9 @@
     .itens-menu ul ul li{
         float: none;
     }
-
+    /* .logar{
+        float: right;
+    } */
     
     #descriçao{
         font-family: 'Open Sans',sans-serif;
