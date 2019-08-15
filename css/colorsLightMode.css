@@ -1,6 +1,9 @@
 *{
     background-color:#ffffff;
 }
+label[for="bt-menu"]{
+    color: #145899;
+}
 .itens-menu a{
     background-color: #ffffff;
     color: #145899;
