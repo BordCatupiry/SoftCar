@@ -14,9 +14,6 @@
         height: 100%;
         display: block;
     }
-
-
-
     .itens-menu ul{
         list-style: none;
         display: flex;
@@ -24,11 +21,6 @@
     .itens-menu ul li{
         float: left;
     }
-    .itens-menu ul ul{
-        position: absolute;
-        visibility: hidden;
-    }
-
     .itens-menu ul li:hover ul{
         visibility: visible;
     }
@@ -43,13 +35,9 @@
     .itens-menu a:hover {
         font-weight: bold;
     }
-    .itens-menu ul ul li{
-        float: none;
-    }
-    /* .logar{
-        float: right;
+    /* .itens-menu >{
+  
     } */
-    
     #descriçao{
         font-family: 'Open Sans',sans-serif;
         font-size: 18pt;
@@ -106,6 +94,10 @@
 
  /* ########################################################### TELA PEQUENA ################################################################# */
     @media(max-width: 800px){
+    
+    .itens-menu{
+        visibility: hidden;
+    }
 
     #nomezao{
         padding: 5px;
