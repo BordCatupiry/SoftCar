@@ -40,6 +40,14 @@
     .itens-menu a:hover {
         font-weight: bold;
     }
+    .espaço-cadastro{
+        margin-left: 260px;
+        font-size: 10pt;
+    }
+    .espaço-cadastro li a {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     #descriçao{
         font-family: 'Open Sans',sans-serif;
         font-size: 18pt;
