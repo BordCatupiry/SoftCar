@@ -4,37 +4,37 @@
     <head>
         <title>Softcar Web</title>
             <meta charset="utf-8">
-            <link rel="stylesheet" href="home.css"/>
-            <link rel="stylesheet" href="colorsLightMode.css"/>
+            <link rel="stylesheet" href="css/home.css"/>
+            <link rel="stylesheet" href="css/colorsLightMode.css"/>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700|Roboto+Slab:400,700&display=swap"/>
     </head>
 
     <body>
+        <div class="menu">
+            <div>
+                <input type="checkbox" id="bt-menu">
+                <label for="bt-menu">&#9776;</label>
+            </div>
+            <div class="espaço-logo">
+                <img id="logo" src="images/logo.png">
+            </div>
 
-            <input type="checkbox" id="bt_menu">
-            <nav>
-                <label for="bt_menu">&#9776;</label>
-            </nav>
-    <nav class="menu">
-        <ul>
-            <li class="espaçoLogo" href="home.html">
-                 
-                    <img id="logo" src="logo.png">
+            <div class="itens-menu">
+                <ul class="espaço-itens">
+                    <li><a href="#">Download Mobile</a></li> 
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Minha Conta</a></li>
+                </ul>
 
-            </li>
-            <li><a href="#">Download Mobile</a>
-            </li>
-            <li><a href="#">Meu Perfil</a>
-                <ul>
-                        <li><a href="#">Editar Perfil</a></li>
-                        <li><a href="#">Histórico de Viagens</a></li>
-                    </ul>
-                </li>
-            <li><a href="#">Fale Conosco</a></li>
-        </ul>
-    </nav>
+                <ul class="espaço-cadastro">
+                    <li><a href="#">Entrar</a></li> 
+                    <li><a href="#">Cadastrar</a></li>
+                </ul>
+            </div>
+            
+        </div>
             <div class="banner">
-                <img src="banner.png">  
+                <img src="images/banner1.jpg">
             </div>
             <div class="texto1">
                 <p id="titulo1">Nunca foi tão facil chegar ao trabalho!</p>
