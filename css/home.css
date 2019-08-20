@@ -119,6 +119,9 @@
         display: block;
         margin-top: 15px;
     }
+    #bt-menu:checked itens-menu{
+       
+    }
     .itens-menu{
         width: 100%;
         float: none;
