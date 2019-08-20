@@ -114,6 +114,11 @@
 
  /* ########################################################### TELA PEQUENA ################################################################# */
     @media(max-width: 800px){
+    
+    label[for="bt-menu"]{
+        display: block;
+        margin-top: 15px;
+    }
     .itens-menu{
         width: 100%;
         float: none;
