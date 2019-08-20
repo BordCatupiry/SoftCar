@@ -120,17 +120,20 @@
         display: block;
         margin-top: 15px;
     }
-    /* #bt-menu:checked ~ .itens-menu{
+    #bt-menu:checked ~ .itens-menu{
         margin-top: 0; 
     }
     .itens-menu{
         margin-top: -100%;
         transition: all .4s;
-    } */
+    }
     .itens-menu ul li{
+        position: static;
         width: 100%;
         float: none;
+        overflow: hidden;
     }
+
     #nomezao{
         padding: 5px;
     }
