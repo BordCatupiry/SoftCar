@@ -62,11 +62,33 @@
         font-size: 18pt;
         padding-top: 25px;
     }
-
-    .banner img{
+    
+    .banner{
         width: 100%;
+        margin: 200px auto;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .foto{
+        position: absolute;
+        opacity: 0;
+        animation-name: animacao;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
     }
 
+    @keyframes animacao{
+        25%{
+            opacity: 1;
+            transform:scale(1.1,1.1);
+
+        }
+        50%{
+            opacity:0;
+            
+        }
+    }
     .texto1{
         padding: 50px;
     }
