@@ -67,6 +67,7 @@
     #fotos {
         position: relative;
         padding-bottom: 40%;
+        padding-top: 70px;
     }
 
     #fotos > div { 
