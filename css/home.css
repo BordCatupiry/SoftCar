@@ -7,6 +7,7 @@
         position: fixed;
         width: 100%;
         box-shadow: 0px 0px 7px #b1b1b1;
+        z-index: 2;
     }
     label[for="bt-menu"]{
         padding-left: 30px;
@@ -63,31 +64,13 @@
         padding-top: 25px;
     }
     
-    .banner{
-        width: 100%;
-        margin: 200px auto;
-        width: 100%;
+    #fotos {
         position: relative;
-        overflow: hidden;
+        padding-bottom: 40%;
     }
-    .foto{
+
+    #fotos > div { 
         position: absolute;
-        opacity: 0;
-        animation-name: animacao;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes animacao{
-        25%{
-            opacity: 1;
-            transform:scale(1.1,1.1);
-
-        }
-        50%{
-            opacity:0;
-            
-        }
     }
     .texto1{
         padding: 50px;
@@ -161,7 +144,7 @@
     }
     #titulo1{
         font-family:'Roboto Slab',sans-serif;
-        font-size: 18pt;
+        font-size: 24pt;
         font-weight: bold;
     }
 
