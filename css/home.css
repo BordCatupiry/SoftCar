@@ -127,17 +127,16 @@
         margin-top: 15px;
     }
     #bt-menu:checked ~ .itens-menu{
-        margin-top: 0; 
+        visibility: visible; 
     }
     .itens-menu{
-        margin-top: -100%;
+        visibility: hidden;
         transition: all .4s;
     }
     .itens-menu ul li{
         position: static;
         width: 100%;
         float: none;
-        overflow: hidden;
     }
 
     #nomezao{
@@ -178,6 +177,6 @@
         font-size: 22pt;
     }
     .espaço-logo{
-       margin-left: 30%;
+       margin-left: 25%;
     }
 }
