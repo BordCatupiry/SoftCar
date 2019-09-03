@@ -11,6 +11,10 @@
 #qrcode{
     width: 300px;
 }
+#requisitos{
+    width: 300px;
+    padding: 15px;
+}
 .texto2{
     display: block;
     margin-left: 50%;
@@ -25,8 +29,4 @@
 #descriçao1{
     font-family: 'Open Sans',sans-serif;
     font-size: 17pt;
-}
-#descriçao2{
-    font-family: 'Open Sans',sans-serif;
-    font-size: 12pt;
 }
