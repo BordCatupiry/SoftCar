@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-image: url(banner5.png);
+  background-size: cover;
+}
+
+.login-form{
+  margin-top: 8%;
+  width: 430px;
+  height: 670px;
+  background: #ffffff;
+  padding: 45px 50px;
+  border-radius: 20px;
+  position: absolute;
+  right: -10%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+}
+
+.login-form h1{
+  color: black;
+  font-family: 'Roboto Slab',sans-serif;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.txtb{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+  font-family: 'Roboto', sans-serif;
+}
+.txtFgtPsw{
+margin-bottom: 20px;
+color: #145899;
+font-weight: bold;
+font-size: 14px;
+font-family: 'Roboto',sans-serif;
+cursor: pointer;
+}
+.txtb input{
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.txtb span::before{
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #b1b1b1;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+
+.txtb span::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #145899;
+  transition: .3s;
+}
+
+.focus + span::before{
+  top: -5px;
+}
+.focus + span::after{
+  width: 100%;
+}
+
+.logbtn{
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #145899;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 20px;
+  font-family: 'Roboto Slab',sans-serif;
+}
+
+.logbtn:hover{
+  background-color: #387ab8;
+}
+
+.bottom-text{
+  font-family: 'Roboto',sans-serif;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+}
+.bottom-text a{
+  color: #ffffff;
+  text-decoration: underline;
+}
+.btn-voltar{
+  color: #145899;
+  font-family: 'Arial';
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding-top: 5px;
+  margin-left: 50px;
+  margin-top: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  font-size: 15pt;
+}
+#recaptchaImg{
+  padding-left: 12px;
+  padding-bottom: 10px;
+}
+@media(max-width :800px){
+.login-form{left: 50%}
+}

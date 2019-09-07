@@ -10,7 +10,7 @@
 }
 #bannerSide{
     margin-top: -500px;
-    display: flex;
+    display: block;
     position: relative;
     height: 557px;
     float: right;
