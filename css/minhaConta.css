@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #145899;
+}
+.account-form{
+    width: 81%;
+    height: 400px;
+    background: #ffffff;
+    padding: 45px 50px;
+    border-radius: 20px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+#fotopf{
+    width: 100px;
+}
