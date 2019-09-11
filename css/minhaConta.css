@@ -8,7 +8,7 @@ body{
 }
 .account-form{
     width: 81%;
-    height: 400px;
+    height: 85%;
     background: #ffffff;
     padding: 45px 50px;
     border-radius: 20px;
@@ -16,6 +16,17 @@ body{
     left: 10%;
     top: 10%;
 }
+.sessao1{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
 #fotopf{
-    width: 100px;
+    width: 220px;
+    border-radius: 50%;
+}
+#nomeUser{
+    padding-left: 50px;
+    font-family: 'Roboto Slab',sans-serif;
+    font-size: 40pt;
 }
