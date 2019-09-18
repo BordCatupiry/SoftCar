@@ -126,19 +126,28 @@
         display: block;
         margin-top: 15px;
     }
-    #bt-menu:checked ~ .itens-menu{
-        visibility: visible; 
-    }
     .itens-menu{
         visibility: hidden;
         transition: all .4s;
     }
-    .itens-menu ul li{
-        position: static;
-        width: 100%;
-        float: none;
+    .menu-responsivo{
+        padding-top: 20%;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-decoration: none;
     }
-
+    .menu-responsivo li{
+        width: 100%;
+        padding: 10px;
+    }
+    .itens-menu-responsivo{
+        text-align: center;
+    }
+    .espaço-cadastro-responsivo a{
+        padding-left: 25px;
+        padding-right: 10px;
+    }
     #nomezao{
         padding: 5px;
     }
