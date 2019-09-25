@@ -36,9 +36,6 @@
     .itens-menu ul li{
         float: left;
     }
-    /* .itens-menu ul li:hover ul{    ELIMINA ESSE POHA AQUI
-        visibility: visible;
-    } */
     .itens-menu a{
         text-decoration: none;
         padding: 25px;
@@ -125,10 +122,9 @@
         display: block;
         margin-top: 15px;
     }
-    /* .itens-menu{
-        visibility: hidden; 
-                                        TIREI UM NEGOCIO INUTIL DAQUI
-    }*/
+    .itens-menu{
+        visibility: hidden;
+    }
     .menu-responsivo{                           
         padding-top: 90px;                      
         display: block;                         
@@ -142,27 +138,27 @@
     .itens-menu-responsivo{                     
         text-align: center;                     
     }
-    /* .espaço-itens-responsivo a{                ISSO É NOVO
-        padding-top: 10px;                      .
-        text-decoration: none;                  .
-        color: #145899;                         .
-    }                                           .
-    .espaço-cadastro-responsivo a{              .
-        padding-top: 10px;                      .
-        text-decoration: none;                  .
-        padding-left: 25px;                     .
-        padding-right: 10px;                    .
-        color: #145899;                         .
-    }                                           .
-    .espaço-itens-responsivo a:hover{           .
-        font-weight: bold;                      .
-    }                                           .
-    .espaço-cadastro-responsivo a:hover{        .
-        font-weight: bold;                      .
-    }                                           .
-    #fotos{                                     .
-        padding-top: 20px;                      .
-    } */                                        
+    .espaço-itens-responsivo a{               
+        padding-top: 10px;                      
+        text-decoration: none;                  
+        color: #145899;                        
+    }                                           
+    .espaço-cadastro-responsivo a{              
+        padding-top: 10px;                      
+        text-decoration: none;                  
+        padding-left: 25px;                     
+        padding-right: 10px;                    
+        color: #145899;                         
+    }                                           
+    .espaço-itens-responsivo a:hover{           
+        font-weight: bold;                      
+    }                                           
+    .espaço-cadastro-responsivo a:hover{        
+        font-weight: bold;                      
+    }                                           
+    #fotos{                                     
+        padding-top: 20px;                      
+    }                                 
     #nomezao{
         padding: 5px;
     }
