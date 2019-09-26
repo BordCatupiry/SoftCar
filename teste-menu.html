@@ -7,11 +7,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <title>Responsive Auto Show/Hide Toggle Menu Demo</title>
 <style>
-html {
-  font-family: sans-serif;
-  color: #4b5f65;
-  background: #f5f7fa;
-}
 
 body { overflow-x:hidden}
 
@@ -23,7 +18,8 @@ nav { width: 100%; }
   top: 0;
   width: 100%;
   transition: top .5s ease-out;
-  background: #2f3b3f;
+  background: #ffffff;
+  box-shadow: 0px 0px 7px #b1b1b1;
 }
 
 .scroll { top: -90px; }
@@ -36,7 +32,7 @@ nav { width: 100%; }
 .btn {
   padding: 10px 1%;
   margin: 5px;
-  color: #fff;
+  color: blue;
   text-decoration: none;
   font-family: sans-serif;
   transition: all 0.1s ease;
@@ -49,25 +45,18 @@ main {
   margin: 0 auto;
 }
 
-main p {  1.2em;
-}
+
 
 #search {
   float: right;
   font-size: 30px;
   padding: 2px 15px;
   line-height: 40px;
-  color: #fff;
+  color: blue;
   margin: 0;
   font-weight: 700;
-  -webkit-transform: rotate(181deg);
-  -moz-transform: rotate(181deg);
-  -ms-transform: rotate(181deg);
-  -o-transform: rotate(181deg);
-  transform: rotate(181deg);
 }
 
-#search:hover { color: #efa666; }
 
 .search_box {
   clear: both;
@@ -111,8 +100,6 @@ main p {  1.2em;
   transition: all 0.1s ease;
 }
 
-.search_box input.search_icon:hover { background: #efa666; }
-
 .menu-link { display: none; }
 
 .spinner-master input[type=checkbox] { display: none; }
@@ -146,7 +133,7 @@ main p {  1.2em;
 .menu ul li a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: blue;
   font-size: 14px;
 }
 
@@ -285,7 +272,7 @@ footer a {
 
 a.menu-link {
   display: block;
-  color: #fff;
+  color: blue;
   float: left;
   text-decoration: none;
   padding: 10px 16px;
@@ -311,7 +298,7 @@ a.menu-link.active:after { content: "\2715"; }
 .menu > ul ul {
   overflow: hidden;
   max-height: 0;
-  background-color: #39484d;
+  background-color: #b1b1b1;
 }
 
 .menu > li > ul.sub-menu {
@@ -330,7 +317,7 @@ a.menu-link.active:after { content: "\2715"; }
 .menu > ul > li:last-of-type a { border: none; }
 
 .menu li a {
-  color: #fff;
+  color: blue;
   display: block;
   padding: 0.8em;
   position: relative;
@@ -401,8 +388,7 @@ a.menu-link.active:after { content: "\2715"; }
     <div class="spinner diagonal part-2"></div>
     </label>
   </div>
-  <a href="#search_box" class="btn" id="search">&#9740;</a>
-  <a><i class="btn">person</i></a>
+  <a href="#search_box" class="btn" id="search">999</a>
   <nav id="menu" class="menu">
     <ul class="dropdown">
 
@@ -410,39 +396,8 @@ a.menu-link.active:after { content: "\2715"; }
       <li ><a href="#Link">Fale Conosco</a></li>
     </ul>
   </nav>
-  <form class="search_box" id="search_box" action="/search/">
-    <input name="search_criteria" placeholder="Search here" value="" type="text">
-    <input class="search_icon" value="Search" type="submit">
-  </form>
 </div>
-<main>
-  <div id="hero"><img src="https://unsplash.it/2048/1367?image=670"/></div>
-  <h1>Responsive Auto Show/Hide Toggle Menu Demo</h1>
-  <div class="jquery-script-ads"><script type="text/javascript"><!--
-google_ad_client = "ca-pub-2783044520727903";
-/* jQuery_demo */
-google_ad_slot = "2780937993";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor velit, dictum a nisl vel, elementum auctor lacus. Donec id eros non libero sagittis pulvinar nec at nisi. Nulla egestas venenatis erat, placerat consequat odio interdum vel. Cras ullamcorper, risus vel accumsan molestie, ex elit lobortis lorem, eu cursus nunc diam ultrices nisi. Suspendisse dictum diam at arcu mattis, vel accumsan quam tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec faucibus nisi. Sed leo turpis, pulvinar a porta et, dignissim id lectus. Nulla fringilla tellus tortor, sed finibus orci auctor condimentum. Pellentesque ac quam nibh. Cras accumsan est vitae ipsum maximus commodo. Fusce ullamcorper, ipsum id elementum consequat, augue eros lacinia velit, non commodo quam risus ac dolor. Sed at mattis nisi. Integer semper lorem eu libero congue sodales.</p>
-  <p>Pellentesque felis lectus, commodo vel dapibus id, egestas et orci. Vestibulum imperdiet ante vel nulla suscipit aliquet. Curabitur egestas non lorem eget dictum. Aliquam maximus urna non neque consectetur vestibulum. In sed erat eu felis congue sollicitudin. Suspendisse potenti. Donec egestas condimentum massa in dictum. Duis eget neque luctus, rhoncus eros sed, facilisis ante. Praesent posuere et erat fringilla pellentesque.</p>
-  <p>Proin lobortis dolor eu turpis posuere, ac condimentum felis venenatis. Vivamus eu feugiat odio, pretium convallis leo. Vivamus vitae velit sapien. Nam vestibulum malesuada convallis. Vivamus quis vehicula nisl, quis bibendum arcu. Donec scelerisque id tortor ut imperdiet. Vestibulum a eros turpis. Vestibulum viverra a ex ut pulvinar. Nam semper, mi non tincidunt eleifend, felis felis gravida nisl, a fermentum ipsum libero ac diam.</p>
-  <p>Sed et urna porta nulla posuere ullamcorper sed id odio. Quisque accumsan fermentum quam. Donec molestie sollicitudin mi, eu ultrices orci venenatis eget. Donec porttitor suscipit velit, et posuere orci eleifend sed. Ut tortor odio, varius ac augue et, fringilla eleifend enim. Quisque elementum magna nec ipsum blandit, vitae hendrerit diam sollicitudin. Fusce et velit velit. Nam pharetra ligula non arcu facilisis tincidunt. Nulla venenatis euismod enim, at dapibus magna finibus in. Sed a lacus ac libero aliquet elementum sed vel libero. Sed dictum accumsan tellus, et consectetur diam consequat ut. Suspendisse potenti. Sed pellentesque orci vel ipsum semper, ut lacinia eros laoreet. Integer vitae augue condimentum, rutrum nisl volutpat, lacinia libero.</p>
-  <p>In pretium elit nunc, et aliquam sem facilisis eu. Quisque laoreet augue in ipsum pulvinar, ut dignissim sem rhoncus. Nulla quis consequat risus, sed lacinia diam. In hac habitasse platea dictumst. Donec sit amet luctus odio. Praesent egestas ullamcorper turpis ut rhoncus. Integer hendrerit, orci mattis euismod tristique, magna felis tincidunt leo, vel viverra metus tellus at lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris mattis varius purus sit amet fringilla. Nullam scelerisque turpis mauris. Integer pellentesque enim vitae enim ornare, sed placerat est venenatis. Etiam sit amet justo quis orci porttitor scelerisque id vitae nunc. Nulla facilisi. Morbi at gravida turpis.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor velit, dictum a nisl vel, elementum auctor lacus. Donec id eros non libero sagittis pulvinar nec at nisi. Nulla egestas venenatis erat, placerat consequat odio interdum vel. Cras ullamcorper, risus vel accumsan molestie, ex elit lobortis lorem, eu cursus nunc diam ultrices nisi. Suspendisse dictum diam at arcu mattis, vel accumsan quam tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec faucibus nisi. Sed leo turpis, pulvinar a porta et, dignissim id lectus. Nulla fringilla tellus tortor, sed finibus orci auctor condimentum. Pellentesque ac quam nibh. Cras accumsan est vitae ipsum maximus commodo. Fusce ullamcorper, ipsum id elementum consequat, augue eros lacinia velit, non commodo quam risus ac dolor. Sed at mattis nisi. Integer semper lorem eu libero congue sodales.</p>
-  <p>Pellentesque felis lectus, commodo vel dapibus id, egestas et orci. Vestibulum imperdiet ante vel nulla suscipit aliquet. Curabitur egestas non lorem eget dictum. Aliquam maximus urna non neque consectetur vestibulum. In sed erat eu felis congue sollicitudin. Suspendisse potenti. Donec egestas condimentum massa in dictum. Duis eget neque luctus, rhoncus eros sed, facilisis ante. Praesent posuere et erat fringilla pellentesque.</p>
-  <p>Proin lobortis dolor eu turpis posuere, ac condimentum felis venenatis. Vivamus eu feugiat odio, pretium convallis leo. Vivamus vitae velit sapien. Nam vestibulum malesuada convallis. Vivamus quis vehicula nisl, quis bibendum arcu. Donec scelerisque id tortor ut imperdiet. Vestibulum a eros turpis. Vestibulum viverra a ex ut pulvinar. Nam semper, mi non tincidunt eleifend, felis felis gravida nisl, a fermentum ipsum libero ac diam.</p>
-  <p>Sed et urna porta nulla posuere ullamcorper sed id odio. Quisque accumsan fermentum quam. Donec molestie sollicitudin mi, eu ultrices orci venenatis eget. Donec porttitor suscipit velit, et posuere orci eleifend sed. Ut tortor odio, varius ac augue et, fringilla eleifend enim. Quisque elementum magna nec ipsum blandit, vitae hendrerit diam sollicitudin. Fusce et velit velit. Nam pharetra ligula non arcu facilisis tincidunt. Nulla venenatis euismod enim, at dapibus magna finibus in. Sed a lacus ac libero aliquet elementum sed vel libero. Sed dictum accumsan tellus, et consectetur diam consequat ut. Suspendisse potenti. Sed pellentesque orci vel ipsum semper, ut lacinia eros laoreet. Integer vitae augue condimentum, rutrum nisl volutpat, lacinia libero.</p>
-  <p>In pretium elit nunc, et aliquam sem facilisis eu. Quisque laoreet augue in ipsum pulvinar, ut dignissim sem rhoncus. Nulla quis consequat risus, sed lacinia diam. In hac habitasse platea dictumst. Donec sit amet luctus odio. Praesent egestas ullamcorper turpis ut rhoncus. Integer hendrerit, orci mattis euismod tristique, magna felis tincidunt leo, vel viverra metus tellus at lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris mattis varius purus sit amet fringilla. Nullam scelerisque turpis mauris. Integer pellentesque enim vitae enim ornare, sed placerat est venenatis. Etiam sit amet justo quis orci porttitor scelerisque id vitae nunc. Nulla facilisi. Morbi at gravida turpis.</p>
-</main>
-<footer>
-  <div class="separator" style="clear: both; text-align: center;"> <b><a href="http://arlinadesign.blogspot.com/2015/01/responsive-show-and-hide-navigation.html">Arlina Design</a></b></div>
-</footer>
+
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> 
 <script>
 $('ul li:has(ul)').addClass('has-submenu');
