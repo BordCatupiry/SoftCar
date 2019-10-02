@@ -36,9 +36,6 @@
     .itens-menu ul li{
         float: left;
     }
-    .itens-menu ul li:hover ul{
-        visibility: visible;
-    }
     .itens-menu a{
         text-decoration: none;
         padding: 25px;
@@ -126,19 +123,32 @@
         display: block;
         margin-top: 15px;
     }
-    #bt-menu:checked ~ .itens-menu{
-        visibility: visible; 
+    .menu input:checked ~ .itens-menu{
+        margin-top: -200px;
     }
     .itens-menu{
-        visibility: hidden;
-        transition: all .4s;
+        margin-top: 73px;
+        margin-left: -220px;
+    }
+    
+    .itens-menu ul{
+        list-style: none;
+        display: block;
+        padding-bottom: 15px;
     }
     .itens-menu ul li{
-        position: static;
-        width: 100%;
         float: none;
     }
-
+    .itens-menu a{
+        padding: 10px;
+        width: 100%;
+    }
+    .espaço-cadastro{
+        padding-left: 30px;
+        padding-top: 25px;
+        margin-left: 0px;
+        font-size: 12pt;
+    }
     #nomezao{
         padding: 5px;
     }
