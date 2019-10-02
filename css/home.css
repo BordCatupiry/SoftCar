@@ -140,14 +140,18 @@ label[for="bt-menu"]{
     float: none;
 }
 .itens-menu a{
-    padding: 10px;
+    padding: 7px 0px 5px 0px;
     width: 100%;
+    text-align: right;
+
 }
 .espaço-cadastro{
     padding-left: 30px;
-    padding-top: 25px;
     margin-left: 0px;
     font-size: 12pt;
+}
+.espaço-cadastro a{
+    text-align: left;
 }
 #nomezao{
     padding: 5px;
