@@ -112,10 +112,17 @@ label[for="bt-menu"]{
 .titulo{
     font-size: 22pt;
 }
-#bt-menu{
-    display: none;
-}
 
+.rodape{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    display: flex;
+}
+.rodape div{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
 /* ########################################################### TELA PEQUENA ################################################################# */
 @media(max-width: 800px){
 
@@ -124,7 +131,7 @@ label[for="bt-menu"]{
     margin-top: 15px;
 }
 .menu input:checked ~ .itens-menu{
-    margin-top: -200px;
+    visibility: hidden;
 }
 .itens-menu{
     margin-top: 73px;
@@ -193,4 +200,7 @@ label[for="bt-menu"]{
 .espaço-logo{
    margin-left: 25%;
 }
+
+
+
 }

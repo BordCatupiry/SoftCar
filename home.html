@@ -7,55 +7,67 @@
             <link rel="stylesheet" href="css/home.css"/>
             <link rel="stylesheet" href="css/colorsLightMode.css"/>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700|Roboto+Slab:400,700&display=swap"/>
-            
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script>
-            $("#fotos > div:gt(0)").hide();
-
-            setInterval(function() { 
-            $('#fotos > div:first')
-                .fadeOut(1000)
-                .next()
-                .fadeIn(1000)
-                .end()
-                .appendTo('#fotos');
-            },  5000);
-            </script>
+            
     </head>
     <body>
 
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+<!-- 
         <div class="menu">
-             <div> <!-- HAMBURGUER -->
+             <div>
                 <input type="checkbox" id="bt-menu">
-                <label for="bt-menu">&#9776;</label>
+                <label for="bt-menu" id="hamburguer">&#9776;</label>
             </div>
-            <div class="espaço-logo"><!--LOGO DENTRO DO MENU-->
+            <div class="espaço-logo">
                 <a  href="home.html"><img id="logo" src="images/logo.png"></a>
             </div>
 
-                <div class="itens-menu"> <!--TODOS LINKS DO MENU-->
-                    <ul class="espaço-itens"> <!-- LINKS PADRÕES-->
+                <div class="itens-menu">
+                    <ul class="espaço-itens">
                         <li><a href="download.html">Download Mobile</a></li> 
                         <li><a href="#">Suporte</a></li>
                         <li><a href="#">Minha Conta</a></li>
                     </ul>
                     
-                    <ul class="espaço-cadastro"> <!--LINKS PARA LOGAR/CADASTRAR-->
+                    <ul class="espaço-cadastro">
                         <li><a href="login.html">Entrar</a></li> 
                         <li><a href="cadastro.html">Cadastrar-se</a></li>
                     </ul>
                 </div>
             
-        </div>
+        </div> 
 
-            <div class="banner"> <!--SLIDES/BANNER-->
+            <div class="banner"> SLIDES/BANNER
 
-                    <ul class="espaço-cadastro"> <!--LINKS PARA LOGAR/CADASTRAR-->
+                    <ul class="espaço-cadastro"> LINKS PARA LOGAR/CADASTRAR
                         <li><a href="login.html">Logar</a></li> 
                         <li><a href="cadastro.html">Cadastrar</a></li>
                     </ul>
                 </div>
-            
+            -->
         </div>
 
             <div class="banner"> <!--SLIDES/BANNER-->
@@ -100,6 +112,24 @@
                                 </tr>
                         </table>
                     </div>
-<!--FALTA O FOOTER AQUI-->
+            <footer>
+                <div class="rodape">
+                    <div>vai toma no cu</div>
+                    <div>filha da puta</div>
+                    <div>resto de aborto</div>
+                </div>
+            <footer>
+                    <script>
+                            $("#fotos > div:gt(0)").hide();
+                
+                            setInterval(function() { 
+                            $('#fotos > div:first')
+                                .fadeOut(1000)
+                                .next()
+                                .fadeIn(1000)
+                                .end()
+                                .appendTo('#fotos');
+                            },  5000);
+                            </script>
     </body>
 </html>
