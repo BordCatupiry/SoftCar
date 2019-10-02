@@ -1,202 +1,192 @@
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .menu{
-        display: flex;
-        position: fixed;
-        width: 100%;
-        box-shadow: 0px 0px 7px #b1b1b1;
-        z-index: 2;
-    }
-    label[for="bt-menu"]{
-        padding-left: 30px;
-        font-family: Arial;
-        text-align: center;
-        font-size: 24px;
-        cursor: pointer;
-        height: 50px;
-        display: none;
-    }
-    .espaço-logo{
-        height: 40px;
-        padding: 15px;
-    }
-    #logo{
-        height: 100%;
-        display: block;
-    }
-    .itens-menu{
-        display: flex;
-    }
-    .itens-menu ul{
-        list-style: none;
-        display: flex;
-    }
-    .itens-menu ul li{
-        float: left;
-    }
-    .itens-menu a{
-        text-decoration: none;
-        padding: 25px;
-        display: block;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        width: 130px;
-    }
-    .itens-menu a:hover {
-        font-weight: bold;
-    }
-    .espaço-cadastro{
-        margin-left: 350px;
-        font-size: 10pt;
-    }
-    .espaço-cadastro li a {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    #descriçao{
-        font-family: 'Open Sans',sans-serif;
-        font-size: 18pt;
-        padding-top: 25px;
-    }
-    
-    #fotos {
-        position: relative;
-        padding-bottom: 40%;
-    }
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 7px #b1b1b1;
+    z-index: 2;
+}
+label[for="bt-menu"]{
+    padding-left: 30px;
+    font-family: Arial;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    height: 50px;
+    display: none;
+}
+.espaço-logo{
+    height: 40px;
+    padding: 15px;
+}
+#logo{
+    height: 100%;
+    display: block;
+}
+.itens-menu{
+    display: flex;
+}
+.itens-menu ul{
+    list-style: none;
+    display: flex;
+}
+.itens-menu ul li{
+    float: left;
+}
+.itens-menu a{
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 130px;
+}
+.itens-menu a:hover {
+    font-weight: bold;
+}
+.espaço-cadastro{
+    margin-left: 350px;
+    font-size: 10pt;
+}
+.espaço-cadastro li a {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#descriçao{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18pt;
+    padding-top: 25px;
+}
 
-    #fotos > div { 
-        position: absolute;
-    }
-    .texto1{
-        padding: 50px;
-    }
+#fotos {
+    position: relative;
+    padding-bottom: 40%;
+    padding-top: 70px;
+}
 
-    #titulo1{
-        font-family:'Roboto Slab',sans-serif;
-        font-size: 36pt;
-        font-weight: bold;
-    }
+#fotos > div { 
+    position: absolute;
+}
+.texto1{
+    padding: 50px;
+}
 
-    #descriçao{
-        font-family: 'Open Sans',sans-serif;
-        font-size: 18pt;
-        padding-top: 25px;
-    }
-    
-    .tabelas{
-        display: flex;
-        margin: 0px 50px 50px 50px;
-        font-family: 'Roboto',sans-serif;
-        font-size: 20px;
-    }
-    .tabela1{
-        padding: 15px;
-        box-shadow: 0px 0px 7px #b1b1b1;
-        border-radius: 20px;
-        margin: 0px 15px 0px 0px
-    }
-    .tabela2{
-        padding: 15px;
-        box-shadow: 0px 0px 7px #b1b1b1;
-        border-radius: 20px;
-    }
-    .tabela3{
-        padding: 15px;
-        box-shadow: 0px 0px 7px #b1b1b1;
-        border-radius: 20px;
-        margin: 0px 0px 0px 15px
-    }
-    .titulo{
-        font-size: 22pt;
-    }
-    #bt-menu{
-        display: none;
-    }
+#titulo1{
+    font-family:'Roboto Slab',sans-serif;
+    font-size: 36pt;
+    font-weight: bold;
+}
 
- /* ########################################################### TELA PEQUENA ################################################################# */
-    @media(max-width: 800px){
-    
-    label[for="bt-menu"]{
-        display: block;
-        margin-top: 15px;
-    }
-    .itens-menu{
-        visibility: hidden;
-    }
-    .menu-responsivo{                           
-        padding-top: 90px;                      
-        display: block;                         
-        font-family: 'Roboto', sans-serif;      
-        font-size: 20px;                        
-    }
-    .menu-responsivo li{                       
-        width: 100%;                            
-        padding: 10px;                          
-    }
-    .itens-menu-responsivo{                     
-        text-align: center;                     
-    }
-    .espaço-itens-responsivo a{               
-        padding-top: 10px;                      
-        text-decoration: none;                  
-        color: #145899;                        
-    }                                           
-    .espaço-cadastro-responsivo a{              
-        padding-top: 10px;                      
-        text-decoration: none;                  
-        padding-left: 25px;                     
-        padding-right: 10px;                    
-        color: #145899;                         
-    }                                           
-    .espaço-itens-responsivo a:hover{           
-        font-weight: bold;                      
-    }                                           
-    .espaço-cadastro-responsivo a:hover{        
-        font-weight: bold;                      
-    }                                           
-    #fotos{                                     
-        padding-top: 20px;                      
-    }                                 
-    #nomezao{
-        padding: 5px;
-    }
-    #titulo1{
-        font-family:'Roboto Slab',sans-serif;
-        font-size: 24pt;
-        font-weight: bold;
-    }
+#descriçao{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18pt;
+    padding-top: 25px;
+}
 
-    #descriçao{
-        font-family: 'Open Sans',sans-serif;
-        font-size: 14pt;
-        padding-top: 25px;
-    }  
+.tabelas{
+    display: flex;
+    margin: 0px 50px 50px 50px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+}
+.tabela1{
+    padding: 15px;
+    box-shadow: 0px 0px 7px #b1b1b1;
+    border-radius: 20px;
+    margin: 0px 15px 0px 0px
+}
+.tabela2{
+    padding: 15px;
+    box-shadow: 0px 0px 7px #b1b1b1;
+    border-radius: 20px;
+}
+.tabela3{
+    padding: 15px;
+    box-shadow: 0px 0px 7px #b1b1b1;
+    border-radius: 20px;
+    margin: 0px 0px 0px 15px
+}
+.titulo{
+    font-size: 22pt;
+}
+#bt-menu{
+    display: none;
+}
 
-    .tabelas{
-        font-size: 14pt;
-        display: block;
-    }
-    .tabela1{
-        margin-bottom: 10%; 
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .tabela2{
-        margin-bottom: 10%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .tabela3{
-        margin-bottom: 10%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .titulo{
-        font-size: 22pt;
-    }
-    .espaço-logo{
-       margin-left: 25%;
-    }
+/* ########################################################### TELA PEQUENA ################################################################# */
+@media(max-width: 800px){
+
+label[for="bt-menu"]{
+    display: block;
+    margin-top: 15px;
+}
+.menu input:checked ~ .itens-menu{
+    margin-top: -200px;
+}
+.itens-menu{
+    margin-top: 73px;
+    margin-left: -220px;
+}
+
+.itens-menu ul{
+    list-style: none;
+    display: block;
+    padding-bottom: 15px;
+}
+.itens-menu ul li{
+    float: none;
+}
+.itens-menu a{
+    padding: 10px;
+    width: 100%;
+}
+.espaço-cadastro{
+    padding-left: 30px;
+    padding-top: 25px;
+    margin-left: 0px;
+    font-size: 12pt;
+}
+#nomezao{
+    padding: 5px;
+}
+#titulo1{
+    font-family:'Roboto Slab',sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+#descriçao{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14pt;
+    padding-top: 25px;
+}  
+
+.tabelas{
+    font-size: 14pt;
+    display: block;
+}
+.tabela1{
+    margin-bottom: 10%; 
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.tabela2{
+    margin-bottom: 10%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.tabela3{
+    margin-bottom: 10%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.titulo{
+    font-size: 22pt;
+}
+.espaço-logo{
+   margin-left: 25%;
+}
 }
