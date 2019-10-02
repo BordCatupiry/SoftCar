@@ -64,7 +64,7 @@ label[for="bt-menu"]{
 #fotos {
     position: relative;
     padding-bottom: 40%;
-    padding-top: 70px;
+    padding-top: 38px;
 }
 
 #fotos > div { 
@@ -140,7 +140,7 @@ label[for="bt-menu"]{
     float: none;
 }
 .itens-menu a{
-    padding: 7px 0px 5px 0px;
+    padding: 8px 0px 8px 0px;
     width: 100%;
     text-align: right;
 
