@@ -113,16 +113,6 @@ label[for="bt-menu"]{
     font-size: 22pt;
 }
 
-.rodape{
-    width: 100%;
-    height: 200px;
-    background-color: blue;
-    display: flex;
-}
-.rodape div{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
 /* ########################################################### TELA PEQUENA ################################################################# */
 @media(max-width: 800px){
 
