@@ -8,25 +8,56 @@ body{
 }
 .account-form{
     width: 81%;
-    height: 85%;
+    height: 110%;
     background: #ffffff;
     padding: 45px 50px;
     border-radius: 20px;
     position: absolute;
     left: 10%;
-    top: 10%;
+    top: 8%;
 }
 .sessao1{
-    padding: 10px;
-    display: flex;
     align-items: center;
-}
-#fotopf{
-    width: 220px;
-    border-radius: 50%;
-}
-#nomeUser{
-    padding-left: 50px;
     font-family: 'Roboto Slab',sans-serif;
-    font-size: 40pt;
+    display: flex;
+}
+/* #fotopf{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-left: 400px;
+} */
+.sessao2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.sessao2 h2{
+    color: #145899;
+    padding-bottom: 15px
+}
+.divisoria{
+    width: 100%;
+    background: #cccccc;
+    height: 1px;
+    margin-bottom: 5px;
+}
+i{
+    margin-left: 90%;
+    color: #145899;
+    font-size: 12pt;
+    position: absolute;
+    margin-top: -30px;
+    cursor: pointer;
+}
+.btn{
+    font-family: 'Roboto', sans-serif;
+    display: none;
+}
+#blah{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-left: 400px;
 }
