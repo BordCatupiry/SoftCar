@@ -4,16 +4,154 @@
     <meta charset="UTF-8">
     <title>Softcar Web</title>
     <link rel="stylesheet" href="css/minhaConta.css">
+    <script src="https://kit.fontawesome.com/542c00a3b0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700|Roboto+Slab:400,700&display=swap"/>
 </head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(9,9,121);
+}
+.account-form{
+    width: 81%;
+    height: 110%;
+    background: #ffffff;
+    padding: 45px 50px;
+    border-radius: 20px;
+    position: absolute;
+    left: 10%;
+    top: 8%;
+}
+.sessao1{
+    align-items: center;
+    font-family: 'Roboto Slab',sans-serif;
+    display: flex;
+}
+/* #fotopf{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-left: 400px;
+} */
+.sessao2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.sessao2 h2{
+    color: #145899;
+    padding-bottom: 15px
+}
+.divisoria{
+    width: 100%;
+    background: #cccccc;
+    height: 1px;
+    margin-bottom: 5px;
+}
+i{
+    margin-left: 90%;
+    color: #145899;
+    font-size: 12pt;
+    position: absolute;
+    margin-top: -30px;
+    cursor: pointer;
+}
+.btn{
+    font-family: 'Roboto', sans-serif;
+    display: none;
+}
+#blah{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-left: 400px;
+}
+.sessao1 input{
+     display: none;
+}
+label i{
+    cursor: pointer;
+    color: #ffffff;
+    position: absolute;
+    font-size: 23pt;
+    top: 46px;
+    left: -41px;
+}
+label{
+    width: 50pt;
+    height: 50pt;
+    background: #145899;
+    border-radius: 50%;
+    position: relative;
+}
+
+</style>
 <body>
     <form class="account-form">
-        <div class="sessao1">
-            <img id="fotopf" src="images/unicorno.jpeg">
-            <h1 id="nomeUser">Robson Alcatraz</h1>
-            <h2 id="emailUser">rob_prisao@yahoo.com</h2>
-        </div>
-        
+
+        <div class="sessao1">                <!-- SESSÃO 1: Foto de Perfil-->
+            <img id="blah" src="images/userlogo.jpg" />
+            <input type='file' id="imgInp"/>
+            <label for="imgInp"> <i class="fas fa-camera"></i> </label>
+            <!-- <img id="fotopf" src="images/unicorno.jpeg"> -->
+        </div>                               <!--//SESSÃO 1-->
+
+        <div class="sessao2">                <!-- SESSÃO 2: Informações pessoais-->
+            Seu Nome: <h2 id="nomeUser" contenteditable="false">Robson Alcatraz</h2>  <i onclick="editar()" class="fas fa-edit"></i>
+
+                <div class="divisoria"></div>
+
+            CPF: <h2 id="cpfUser" contenteditable="false">125.235.449-54</h2>   <i onclick="editar()" class="fas fa-edit"></i>
+
+                <div class="divisoria"></div>
+
+            E-mail: <h2 id="emailUser" contenteditable="false">prisao_robson789@contato.com</h2>   <i onclick="editar()" class="fas fa-edit"></i>
+
+                <div class="divisoria"></div>
+
+            Cargo: <h2 id="cargoUser" contenteditable="false">Front-End Engineer</h2>   <i onclick="editar()" class="fas fa-edit"></i>
+
+            <div class="divisoria"></div>
+
+            Idade: <h2 id="idadeUser" contenteditable="false">24 </h2>  <i onclick="editar()" class="fas fa-edit"></i>
+
+            <div class="divisoria"></div>
+
+            Telefone: <h2 id="telefoneUser" contenteditable="false">+55 (48) 99613-4973</h2>   <i onclick="editar()" class="fas fa-edit"></i>
+
+            <div class="divisoria"></div>
+
+        Sua senha: <h2 id="senhaUser" contenteditable="false" >********</h2>   <i onclick="editar()" class="fas fa-edit"></i>
+        </div>                               <!--//SESSÃO 2-->
+
     </form>
+    
 </body>
+<script>
+    
+    // var editar = document.getElementById(nomeUser);
+    // editar.innerHTML  = '';
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+    </script>
 </html>
