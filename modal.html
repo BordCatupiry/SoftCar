@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/542c00a3b0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+.modal-title{
+	font-family: 'Roboto Slab', sans-serif;
+    font-size: 20pt;
+}
+.close{
+	color: #ffffff;
+	opacity: 100%;
+}
+.close:hover{
+	color: #cccccc;
+}
+.divisoria{
+    width: 100%;
+    background: #cccccc;
+    height: 1px;
+    margin-bottom: 5px;
+}
+.modal-header{
+	background: #145899;
+	color: #ffffff;
+}
+.modal-body h4{
+	color: #145899;
+}
+.modal-body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.btn-default{
+	background-color: #145899;
+    color: #ffffff;
+}
+i{
+color: #145899;
+margin-left: 70%;
+}
+.campo-icone{
+display: flex;
+}
+
+</style>
+<body>
+
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Meu Perfil</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Seu Perfil</h4>
+        </div>
+        <div class="modal-body">
+          
+          Seu Nome: 
+          <div class="campo-icone">
+          <h4 id="nomeUser" contenteditable="false">Robson Alcatraz</h4> <i onclick="editar()" class="fas fa-edit"></i> </div>
+          
+          <div class="divisoria"></div>
+			
+          CPF:
+          <div class="campo-icone">
+          <h4 id="cpfUser" contenteditable="false">125.235.449-54</h4> 
+//botar o icone em todos e fechar as divs
+          <div class="divisoria"></div>
+
+          E-mail: <h4 id="emailUser" contenteditable="false">prisao_robson789@contato.com</h4> 
+
+          <div class="divisoria"></div>
+
+          Cargo: <h4 id="cargoUser" contenteditable="false">Front-End Engineer</h4> 
+
+          <div class="divisoria"></div>
+
+          Idade: <h4 id="idadeUser" contenteditable="false">24 </h4>
+
+          <div class="divisoria"></div>
+
+          Telefone: <h4 id="telefoneUser" contenteditable="false">+55 (48) 99613-4973</h4> 
+		
+        <div class="divisoria"></div>	
+              
+          Sua senha: <h4 id="senhaUser" contenteditable="false" >********</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Salvar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
