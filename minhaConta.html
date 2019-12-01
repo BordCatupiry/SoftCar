@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Softcar Web</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <title>Softcar Minha Conta</title>
     <script src="https://kit.fontawesome.com/542c00a3b0.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700|Roboto+Slab:400,700&display=swap"/>
-</head>
-<style>
+    
+    </head>
+    <style>
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +18,19 @@ body{
     background-image: url(images/fundo-azul.png);
     background-size: cover;
 }
+ #input{
+    height: 50px;
+    padding: 0 8px;
+    border: 2px solid #cccccc;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt;
+    outline: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-inline-start: 10px;   
+    width: 100%;
+            }
 .account-form{
     width: 81%;
     height: 110%;
@@ -26,12 +40,20 @@ body{
     position: relative;
     left: 10%;
     margin-top: 5%;
+    box-shadow: 0px 0px 10px #0d1d64;
+    margin-bottom: 50px;
 }
 .sessao1{
     align-items: center;
     font-family: 'Roboto Slab',sans-serif;
     display: flex;
 }
+/* #fotopf{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: -70px;
+    margin-left: 400px;
+} */
 .sessao2{
     font-family: 'Roboto',sans-serif;
     font-size: 11pt;
@@ -41,6 +63,7 @@ body{
 .sessao2 h2{
     color: #145899;
     padding-bottom: 15px
+   
 }
 .divisoria{
     width: 100%;
@@ -65,13 +88,14 @@ i{
     border-radius: 50%;
     margin-top: -70px;
     margin-left: 400px;
+    box-shadow: 0px 0px 5px #555555;
 }
 .sessao1 input{
      display: none;
 }
 label i{
     cursor: pointer;
-    color: #cecece;
+    color: #ffffff;
     position: absolute;
     font-size: 23pt;
     top: 46px;
@@ -86,6 +110,7 @@ label{
     position: relative;
     right: 63px;
     top: 40px;
+    box-shadow: 0px 0px 5px #555555;
 }
 .btn-voltar{
   color: #145899;
@@ -102,13 +127,16 @@ label{
   position: absolute;
   font-size: 15pt;
 }
-.sessao3{
+.btn-voltar a{
+    text-decoration: none;
+}
+.del-save{
     margin-top: 70px;
     margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
 }
-.sessao3 button{
+.del-save button{
     font-family: 'Roboto Slab',sans-serif;
     font-size: 13pt;
     border-radius: 15px;
@@ -116,27 +144,24 @@ label{
     border: #145899 2px solid;
     color: #145899;
     background: none;
-    margin-right: 20px;
-    font-weight: bold;
+    margin: 7px;
 }    
 #bt_delete:hover{
     border: red 2px solid;
-    color: red;
+    color: #ffffff;
+    background-color: red;
+    transition: 0.4s;
 }
 #bt_save:hover{
     border: #0fb81d 2px solid;
-    color: #0fb81d;
-}
-i{
-    cursor: pointer;
-    color: #145899;
-    font-size: 20pt;
-    top: 46px;
+    color: #ffffff;
+    background-color: #0fb81d;
+    transition: 0.4s;
 }
 </style>
-<body> 
-        <div class="btn-voltar"><a href="home.html">&#8617;</a></div> <!--BOTÃO VOLTAR-->
-    <form class="account-form">
+    <body>
+      <div class="btn-voltar"><a href="index.jsp">&#8617;</a></div> <!--BOTÃO VOLTAR-->
+      <form class="account-form" action="PerfilSevlet" method="post">
 
         <div class="sessao1">                <!-- SESSÃO 1: Foto de Perfil-->
             <img id="blah" src="images/userlogo.jpg" />
@@ -145,46 +170,40 @@ i{
         </div>                               <!--//SESSÃO 1-->
 
         <div class="sessao2">                <!-- SESSÃO 2: Informações pessoais-->
-            Seu Nome: <h2 id="nomeUser" contenteditable="true">Robson Alcatraz</h2>  <i onclick="editar()" class="fas fa-edit"></i>
+            Seu Nome: <h2 id="nomeUser" type="text">${sessionScope.usuario.nomeUser}</h2>  <i type="button" value="nomeUser" onclick="editar('nome')" class="fas fa-edit"></i>
 
                 <div class="divisoria"></div>
 
-            CPF: <h2 id="cpfUser" contenteditable="false">125.235.449-54</h2> 
+            CPF: <h2 id="cpf" type="text"  >${sessionScope.usuario.cpf}</h2>   <i type="button" value="cpf" onclick="editar('cpf')" class="fas fa-edit"></i>
 
                 <div class="divisoria"></div>
 
-            E-mail: <h2 id="emailUser" contenteditable="false">prisao_robson789@contato.com</h2> 
+            E-mail: <h2 id="email" type="text" >${sessionScope.usuario.email}</h2>   <i type="button" value="email" onclick="editar('email')" class="fas fa-edit"></i>
 
                 <div class="divisoria"></div>
 
-            Cargo: <h2 id="cargoUser" contenteditable="false">Front-End Engineer</h2> 
+            Cargo: <h2 id="cargo" type="text">${sessionScope.usuario.cargo}</h2>   <i type="button" value="cargo" onclick="editar('cargo')" class="fas fa-edit"></i>
 
             <div class="divisoria"></div>
 
-            Idade: <h2 id="idadeUser" contenteditable="false">24 </h2>
+            Idade: <h2 id="idade" type="text">24</h2>  <i type="button" value="idade" onclick="editar('idade')" class="fas fa-edit"></i>
 
             <div class="divisoria"></div>
 
-            Telefone: <h2 id="telefoneUser" contenteditable="false">+55 (48) 99613-4973</h2> 
+            Telefone: <h2 id="telefone" type="text">+55 (48) 99613-4973</h2>   <i type="button" value="telefone" onclick="editar('telefone')" class="fas fa-edit"></i>
 
             <div class="divisoria"></div>
 
-            Sua senha: <h4 id="senhaUser" contenteditable="false" >********</h4>   
+        Sua senha: <h2 id="senha" type="text" >********</h2>   <i type="button" value="senha" onclick="editar('senha')" class="fas fa-edit"></i>
         </div>                               <!--//SESSÃO 2-->
         
-        <div class="sessao3">
-                <button id="bt_delete" onclick="javascript:apagousse()">DELETAR PERFIL</button>   <button id="bt_save">SALVAR</button>
-                <!-- <i class="fas fa-trash-alt" ></i> <i class="fas fa-check"></i> -->
+        <div class="del-save">
+            <button id="bt_delete">DELETAR PERFIL</button>   <button type="submit" id="bt_save">SALVAR</button>
             </div>
 
     </form>
 
 </body>
-<script language=javascript type="text/javascript">
-    function apagousse(){
-        alert("Seu perfil será apagado!");
-        }
-    </script>
 <script>
     
      
@@ -205,4 +224,59 @@ i{
         readURL(this);
     });
     </script>
+    <script>
+        
+        function editar(Campo){
+               var h2, input, text;
+               
+               if(Campo == 'nome'){
+                   h2 = document.getElementById('nomeUser');
+               }else if(Campo == 'cpf'){
+                   h2 = document.getElementById('cpf');
+               }else if(Campo == 'email'){
+                   h2 = document.getElementById('email');
+               }else if(Campo == 'cargo'){
+                   h2 = document.getElementById('cargo');
+               }else if(Campo == 'idade'){
+                   h2 = document.getElementById('idade');
+               }else if(Campo == 'telefone'){
+                   h2 = document.getElementById('telefone');
+               }
+               
+               text = h2.innerHTML;
+               
+               h2.style.display = 'none';
+               
+               input = document.createElement('input');
+               input.type = 'text';
+               input.value = text;
+               input.id = 'input';
+               input.size = Math.max(text.length / 4 * 3, 4);
+               h2.parentNode.insertBefore(input, h2);
+               
+               var enter = document.getElementById('input');
+                 enter.onkeyup = function(e){
+                     if(e.keyCode == 13){
+                         // Removendo o input
+                         h2.parentNode.removeChild(input);
+ 
+                         // Update no texto
+                         h2.innerHTML = input.value;
+                         
+                         // Mostrando o texto dnv
+                         h2.style.display = "";
+                     }   
+                 }
+                 input.onblur = function() {
+                   // Removendo o input
+                   h2.parentNode.removeChild(input);
+ 
+                   // Update no texto
+                   h2.innerHTML = input.value;
+ 
+                   // Mostrando o texto dnv
+                   h2.style.display = "";
+                 };
+             }
+         </script>
 </html>

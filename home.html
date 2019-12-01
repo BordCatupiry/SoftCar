@@ -1,210 +1,318 @@
+
 <!DOCTYPE html>
-<html lang="pt-br"></html>
 <html>
     <head>
         <title>Softcar Web</title>
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="css/home.css"/>
-            <link rel="stylesheet" href="css/colorsLightMode.css"/>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700|Roboto+Slab:400,700&display=swap"/> 
-            <script src="https://3.4.1/jquery.min.js"></script>
-            <script>
-            $("#fotos > div:gt(0)").hide();
-
-            setInterval(function() { 
-            $('#fotos > div:first')
-                .fadeOut(1000)
-                .next()
-                .fadeIn(1000)
-                .end()
-                .appendTo('#fotos');
-            },  5000);
-            </script>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/colorsLightMode.css"/>
+        <link rel = "shortcut icon" type = "imagem/x-icon" href = "images/LogoSoft.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700|Roboto+Slab:400,700&display=swap"/>            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>          
     </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            display: flex;
+            position: fixed;
+            width: 100%;
+            box-shadow: 0px 0px 7px #b1b1b1;
+            z-index: 2;
+        }
+        label[for="bt-menu"]{
+            padding-left: 30px;
+            font-family: Arial;
+            text-align: center;
+            font-size: 24px;
+            cursor: pointer;
+            height: 50px;
+            display: none;
+        }
+        .espaço-logo{
+            height: 40px;
+            padding: 15px;
+        }
+        #logo{
+            height: 100%;
+            display: block;
+        }
+        .itens-menu{
+            display: flex;
+        }
+        .itens-menu ul{
+            list-style: none;
+            display: flex;
+        }
+        .itens-menu ul li{
+            float: left;
+        }
+
+        .itens-menu a{
+            text-decoration: none;
+            padding: 25px;
+            display: block;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            width: 130px;
+        }
+        #descriçao{
+            font-family: 'Open Sans',sans-serif;
+            font-size: 18pt;
+            padding-top: 25px;
+        }
+        #fotos {
+            position: relative;
+            padding-bottom: 40%;
+        }
+
+        #fotos > div { 
+            position: absolute;
+        }
+        .texto1{
+            padding-top: 70px;
+            padding-bottom: 50px;
+        }
+
+        #titulo1{
+            font-family:'Roboto Slab',sans-serif;
+            font-size: 30pt;
+            font-weight: bold;
+        }
+
+        #descriçao{
+            font-family: 'Open Sans',sans-serif;
+            font-size: 17pt;
+            padding-top: 25px;
+        }
+        .tabelas{
+            display: flex;
+            margin: 0px 50px 50px 50px;
+            font-family: 'Roboto',sans-serif;
+            font-size: 20px;
+        }
+        .tabela1{
+            padding: 15px;
+            box-shadow: 0px 0px 7px #b1b1b1;
+            border-radius: 20px;
+            margin: 0px 15px 0px 0px
+        }
+        .tabela2{
+            padding: 15px;
+            box-shadow: 0px 0px 7px #b1b1b1;
+            border-radius: 20px;
+        }
+        .tabela3{
+            padding: 15px;
+            box-shadow: 0px 0px 7px #b1b1b1;
+            border-radius: 20px;
+            margin: 0px 0px 0px 15px
+        }
+        .titulo{
+            font-size: 22pt;
+        }
+        #bt-menu{
+            display: none;
+        }
+        .banner{
+            padding-top: 70px;
+        }
+        .banner-redirect{
+            margin-bottom: 50px;
+        }
+        .banner-redirect img{
+            width: 100%;
+            cursor: pointer;
+        }
+        .texto1{
+            margin-left: 70px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        #titulo1{
+            font-family:'Roboto Slab',sans-serif;
+            font-size: 30pt;
+            font-weight: bold;
+        }
+
+        #descriçao{
+            font-family: 'Open Sans',sans-serif;
+            font-size: 17pt;
+            padding-top: 25px;
+        }
+        footer img{
+            position: absolute;
+            padding-left: 50px;
+            margin-left: -850px;
+            background: none;
+            margin-top: 85px;
+        }
+        .senai{
+            margin-top: 90px;
+            padding-left: 300px;
+        }
+        .soft{
+            margin-top: 87px;
+            padding-left: 550px; 
+        }
+        /* ########################################################### TELA PEQUENA ################################################################# */
+        @media(max-width: 800px){
+
+            label[for="bt-menu"]{
+                display: block;
+                margin-top: 15px;
+            }
+            .itens-menu{
+                visibility: hidden; 
+
+            }
+            .menu-responsivo{                           
+                padding-top: 90px;                      
+                display: block;                         
+                font-family: 'Roboto', sans-serif;      
+                font-size: 20px;                        
+            }
+            .menu-responsivo li{                       
+                width: 100%;                            
+                padding: 10px;                          
+            }
+            .itens-menu-responsivo{                     
+                text-align: center;                     
+            }
+            .espaço-itens-responsivo a{                
+                padding-top: 10px;                      
+                text-decoration: none;                  
+                color: #145899;                         
+            }                                           
+            .espaço-cadastro-responsivo a{              
+                padding-top: 10px;                      
+                text-decoration: none;                  
+                padding-left: 25px;                    
+                padding-right: 10px;                    
+                color: #145899;                         
+            }                                           
+            .espaço-itens-responsivo a:hover{           
+                font-weight: bold;                      
+            }                                           
+            .espaço-cadastro-responsivo a:hover{        
+                font-weight: bold;                      
+            }                                           
+            #fotos{                                     
+                padding-top: 20px;                      
+            }                                     
+            #nomezao{
+                padding: 5px;
+            }
+            #titulo1{
+                font-family:'Roboto Slab',sans-serif;
+                font-size: 24pt;
+                font-weight: bold;
+            }
+
+            #descriçao{
+                font-family: 'Open Sans',sans-serif;
+                font-size: 14pt;
+                padding-top: 25px;
+            }  
+
+            .tabelas{
+                font-size: 14pt;
+                display: block;
+            }
+            .tabela1{
+                margin-bottom: 10%; 
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .tabela2{
+                margin-bottom: 10%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .tabela3{
+                margin-bottom: 10%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .titulo{
+                font-size: 22pt;
+            }
+            .espaço-logo{
+                margin-left: 25%;
+            }
+            .banner-redirect img{
+                width: 150%;
+            }  
+        }
+    </style>
     <body>
-<!-- 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav> -->
 
-        <div class="menu">
-             <div>
-                <input type="checkbox" id="bt-menu">
-                <label for="bt-menu" id="hamburguer">&#9776;</label>
+
+
+
+
+        <div class="banner">
+            <div id="fotos">
+                <div><img src="images/banner1.png" width="100%"></div>
+                <div><img src="images/banner2.png" width="100%"></div>
+                <div><img src="images/banner4.png" width="100%"></div>
             </div>
-            <div class="espaço-logo">
-                <a  href="home.html"><img id="logo" src="images/logo.png"></a>
-            </div>
-
-                <div class="itens-menu">
-                    <ul class="espaço-itens">
-                        <li><a href="download.html">Download Mobile</a></li> 
-                        <li><a href="#">Suporte</a></li>
-                        <li><a href="#">Minha Conta</a></li>
-                    </ul>
-                    
-                    <ul class="espaço-cadastro">
-                        <li><a href="login.html">Entrar</a></li> 
-                        <li><a href="cadastro.html">Cadastrar-se</a></li>
-                    </ul>
-                </div>
-            
-        </div> 
-
-            <div class="banner"> SLIDES/BANNER
-
-                    <ul class="espaço-cadastro"> LINKS PARA LOGAR/CADASTRAR
-                        <li><a href="login.html">Logar</a></li> 
-                        <li><a href="cadastro.html">Cadastrar</a></li>
-                    </ul>
-                </div>
-            
         </div>
 
-            <div class="banner"> <!--SLIDES/BANNER-->
-                <div id="fotos">
-                    <div><img src="images/banner1.png" width="100%"></div>
-                    <div><img src="images/banner2.png" width="100%"></div>
-                    <div><img src="images/banner4.png" width="100%"></div>
-                </div>
-            </div>
+        <div class="texto1">
+            <p id="titulo1">Nunca foi tão fácil chegar ao trabalho!</p>
+            <p id="descriçao">SoftCar é uma plataforma de carona solidária para você funcionário da Softplan, sendo a mais viável para você que mora muito longe da empresa. O SoftCar conecta motorístas e passageiros Softplayers para desfrutar de uma carona amiga que irá beneficiar ambas as partes.</p>
+        </div>  
 
-            <div class="espaço-carona">
-                <img src="img/imagem6.jpg"> 
-                <h1></h1>
-                <button></button>
-            </div> 
+        <div class="banner-redirect"><a href="#"><img src="images/clica-aqui.png"></a></div>
 
-            <div class="texto1">
-            <div class="texto1"> <!--TEXTO PRA ENCHER LINGUIÇA-->
-                <p id="titulo1">Nunca foi tão facil chegar ao trabalho!</p>
-                <p id="descriçao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo enim sem, a aliquam arcu auctor in. Nulla facilisi. Suspendisse imperdiet diam non aliquet pellentesque. Donec nec luctus enim. Nullam ultricies mi quis lectus varius, in tincidunt leo tincidunt. Phasellus tincidunt rutrum egestas. Morbi et risus arcu. Pellentesque rhoncus neque ligula, varius tincidunt lorem placerat a. Vivamus sed ex ipsum. Duis justo diam, convallis sed libero a, vehicula semper tellus. Nam vel leo diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec lectus enim. Pellentesque vel sapien sagittis, facilisis ipsum at, tempus urna. Sed metus justo, venenatis in metus vitae, gravida maximus felis. Cras condimentum sapien vitae sagittis vulputate.</p>
-            </div>  
-                        
-                <div class="tabelas"> <!-- TABELINHAS SOBRE O SOFTCAR-->
-                            <table class="tabela1">
-                                <tr class="titulo">
-                                        <th>Como surgiu?</th>
-                                </tr>
-                                    <tr>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo enim sem</td>
-                                </tr>
-                                </tr>
-                        </table>
-                        <table class="tabela2">
-                                <tr class="titulo">
-                                        <th>O Que é?</th> 
-                                </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo enim sem</td>
-                                    </tr>
-                                    </tr>
-                        </table>
-                        <table class="tabela3">
-                                <tr class="titulo">
-                                        <th>Quem somos?</th>
-                                </tr>
-                                    <tr>
-                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo enim sem</td>
-                                    </tr>    
-                                </tr>
-                        </table>
-                    </div>
-                    <footer class="page-footer grey darken-3">
+            <iframe width="100%" height="400" src="https://mdbootstrap.com/api/snippets/embed/1500607/fullscreen" frameborder="0"></iframe>
+<!--        <div class="tabelas">
+            <table class="tabela1">
+                <tr class="titulo">
+                    <th>Como surgiu?</th>
+                </tr>
+                <tr>
+                    <td>Surgiu com a idéia de solucionar o problema de mobilidade e socialização dos funcionários da Softplan!</td>
+                </tr>
 
-                        <!-- Footer Elements -->
-                        <div class="container">
-     
-                          <!-- Grid row-->
-                          <div class="row">
-     
-                            <!-- Grid column -->
-                            <div class="col-md-12 py-5">
-                              <div class="mb-5 flex-center">
-     
-                                <!--Linkedin -->
-                                <a class="li-ic" id="gabrielLn"  title="LinkedIn Gabriel">
-                                  <i class="fab fa-linkedin fa-lg orange-text mr-md-5 mr-3 fa-2x"> </i>
-                                </a>
-                                <!--Linkedin -->
-                                <a class="li-ic" id="guiLn"  title="LinkedIn Guilherme">
-                                  <i class="fab fa-linkedin fa-lg green-text mr-md-5 mr-3 fa-2x"> </i>
-                                </a>
-                                <!--Linkedin -->
-                                <a class="li-ic" id="zeLn" title="LinkedIn José">
-                                  <i class="fab fa-linkedin fa-lg indigo-text mr-md-5 mr-3 fa-2x"> </i>
-                                </a>
-                                <!--GitHub-->
-                                <a class="ins-ic" href="https://github.com/MrGabbrieel/SoftCarWeb.git" title="GitHub SofCar">
-                                  <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                                </a>
-                                <p>|</p>
-     
-                                <!--SIXTHCUBE-->
-                                <a class="marca" title="SixthCube">
-                                  <img src="images/#.png">
-                                </a> 
-     
-                                <!--SENAI-->
-                                <a class="marca" href="http://sc.senai.br/" title="Senai SC">
-                                  <img src="images/logo-senai.png">
-                                </a>
-     
-                                <!--SOFTPLAN-->
-                                <a class="marca" href="https://www.softplan.com.br/" title="SoftpLan">
-                                  <img src="images/logo-softplan.png">
-                                </a>
-     
-                              </div>
-                            </div>
-                            <!-- Grid column -->
-     
-                          </div>
-                          <!-- Grid row-->
-     
-                        </div>
-                        <!-- Footer Elements -->
-     
-                        <!-- Copyright -->
-                        <div class="footer-copyright text-center py-3">© 2019 Copyright
-                          <a> SixthCube</a>
-                        </div>
-                        <!-- Copyright -->
-     
-                      </footer>
-                    <script>
-                            $("#fotos > div:gt(0)").hide();
-                
-                            setInterval(function() { 
-                            $('#fotos > div:first')
-                                .fadeOut(1000)
-                                .next()
-                                .fadeIn(1000)
-                                .end()
-                                .appendTo('#fotos');
-                            },  5000);
-                            </script>
+            </table>
+            <table class="tabela2">
+                <tr class="titulo">
+                    <th>Quem somos?</th> 
+                </tr>
+                <tr>
+                    <td>Somos a Startup SixthCube. Surgimos atráves de um projeto do Fiesc/Senai e estamos no mercado desde 2018.   Hoje em dia, visamos solucionar o seus problemas de locomoção</td>
+
+                </tr>
+
+            </table>
+            <table class="tabela3">
+                <tr class="titulo">
+                    <th>O que fazemos?</th>
+                </tr>
+                <tr>
+                    <td>Solucionamos os problemas de todos os SoftPlayers para que todos possam ter uma melhor locomoção indo e vindo do trabalho.</td>
+                </tr>    
+            </table>
+        </div>-->
+
+        <footer>
+           <!-- <iframe width="100%" height="269px" src="https://mdbootstrap.com/api/snippets/embed/1279184/fullscreen" frameborder="0"></iframe>-->
+            <iframe width="100%" height="342px" src="https://mdbootstrap.com/api/snippets/embed/1482441/fullscreen" frameborder="0"></iframe>
+        </footer>      
+        <script>
+            $("#fotos > div:gt(0)").hide();
+
+            setInterval(function () {
+                $('#fotos > div:first')
+                        .fadeOut(1000)
+                        .next()
+                        .fadeIn(1000)
+                        .end()
+                        .appendTo('#fotos');
+            }, 5000);
+        </script>
     </body>
 </html>
